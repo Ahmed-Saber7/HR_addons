@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="business_trip_form" model="ir.ui.view">
+            <field name="name">business.trip.form</field>
+            <field name="model">business.trip</field>
+            <field name="arch" type="xml">
+                <form string="Business Trip">
+
+                    <header>
+                        <button name="done" string="Done" class="oe_highlight" states="draft" type="object"/>
+                        <button name="d_manager_confirm" string="Approve" class="oe_highlight" states="d_manager"
+                                type="object"/>
+                        <button name="inventory_confirm" string="Approve" class="oe_highlight" states="inventory"
+                                groups="stock.group_stock_user"
+                                type="object"/>
+                        <button name="hr_manager_confirm" string="Approve" class="oe_highlight" states="hr_manager"
+                                type="object" groups="hr.group_hr_user"/>
+                        <button name="accounting_confirm" string="Approve" class="oe_highlight" states="accounting"
+                                type="object" groups="account.group_account_manager"/>
+                        <button name="g_manager_confirm" string="Approve" class="oe_highlight" states="g_manager"
+                                type="object"/>
+                        <button name="reject" string="Reject" type="object"
+                                states="d_manager,inventory,hr_manager,accounting,g_manager,accounting_2"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" attrs="{'readonly':[('state','=','confirm')]}"/>
+<!--                                <field name="termination_type" attrs="{'readonly':[('state','=','confirm')]}"/>-->
+                                <field name="employee_company_id"/>
+                                <field name="employee_department_id"/>
+                                <field name="contract_id"/>
+                                <field name="handover_id"/>
+                                <field name="joining_date"/>
+                                <field name="today_date"/>
+                                <field name="return_date"/>
+                                <field name="country_id"/>
+                                <field name="wage" force_save="1"/>
+                                <field name="wage_day_amount" force_save="1"/>
+                                <field name="duration_days" force_save="1"/>
+                                <field name="duration_years" force_save="1"/>
+                                <field name="left_vacations_days" force_save="1"/>
+                                <field name="left_vacations_days_amount" force_save="1"/>
+                                <field name="loans" force_save="1"/>
+                            </group>
+                            <group>
+                                <field name="last_working_day"/>
+                                <field name="last_working_days" force_save="1"/>
+                                <field name="deserved_salary_amount" force_save="1"/>
+                                <field name="absence_days"/>
+                                <field name="absence_days_deduction" force_save="1"/>
+                                <field name="other_allowances" force_save="1"/>
+                                <field name="other_deductions" force_save="1"/>
+                                <field name="total"/>
+                                <field name="leave_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Accounting Configurations">
+                                <group>
+                                    <group string="Other Deductions">
+                                        <field name="other_deductions_journal_id" force_save="1" string="Journal"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="other_deductions_debit_account_id" string="Debit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="other_deductions_credit_account_id" string="Credit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="other_deductions_move_id" string="Account Move" readonly="1"/>
+                                    </group>
+
+                                    <group string="Outstanding Loans">
+                                        <field name="outstanding_loans_journal_id" force_save="1" string="Journal"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="outstanding_loans_debit_account_id" string="Debit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="outstanding_loans_credit_account_id" string="Credit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="outstanding_loans_move_id" string="Account Move" readonly="1"/>
+                                    </group>
+
+
+                                    <group string="Absence Days Deduction">
+                                        <field name="absence_days_journal_id" force_save="1" string="Journal"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="absence_days_debit_account_id" string="Debit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="absence_days_credit_account_id" string="Credit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="absence_days_move_id" string="Account Move" readonly="1"/>
+                                    </group>
+
+                                    <!--                                    ////////////////////////////////////////////-->
+
+                                    <group string="Other Allowances">
+                                        <field name="other_allowances_journal_id" force_save="1" string="Journal"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="other_allowances_debit_account_id" string="Debit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="other_allowances_credit_account_id" string="Credit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="other_allowances_move_id" string="Account Move" readonly="1"/>
+                                    </group>
+
+                                    <group string="Deserved Salary">
+                                        <field name="deserved_salary_journal_id" force_save="1" string="Journal"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="deserved_salary_debit_account_id" string="Debit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="deserved_salary_credit_account_id" string="Credit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="deserved_salary_move_id" string="Account Move" readonly="1"/>
+                                    </group>
+                                    <group string="Left Vacation Amount">
+                                        <field name="left_vacation_amount_journal_id" force_save="1" string="Journal"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="left_vacation_amount_debit_account_id" string="Debit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="left_vacation_amount_credit_account_id" string="Credit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="left_vacation_amount_account_move_id" string="Account Move"
+                                               readonly="1"/>
+                                    </group>
+                                    <group string="Total">
+                                        <field name="journal_id" force_save="1" string="Journal"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="debit_account_id" string="Debit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="credit_account_id" string="Credit Account"
+                                               attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                        <field name="account_move_id" string="Account Move" readonly="1"/>
+                                    </group>
+
+
+                                    <!--                                    ////////////////////////////////////////////-->
+                                </group>
+                            </page>
+
+                            <page string="Internal Notes" name="internal_notes">
+                                <field name="d_manager_notes" placeholder="Add a note" attrs="{'readonly': [('state', '!=', 'd_manager')]}"/>
+                                <field name="inventory_notes" placeholder="Add a note" attrs="{'readonly': [('state', '!=', 'inventory')]}"/>
+                                <field name="hr_manager_notes" placeholder="Add a note" attrs="{'readonly': [('state', '!=', 'hr_manager')]}"/>
+                                <field name="accounting_manager_notes" placeholder="Add a note" attrs="{'readonly': [('state', '!=', 'accounting')]}"/>
+                                <field name="g_manager_notes" placeholder="Add a note" attrs="{'readonly': [('state', '!=', 'g_manager')]}"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="business_trip_tree" model="ir.ui.view">
+            <field name="name">business.trip.tree</field>
+            <field name="model">business.trip</field>
+            <field name="arch" type="xml">
+                <tree string="Business Trip">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="country_id"/>
+                    <field name="return_date"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="business_trip_action" model="ir.actions.act_window">
+            <field name="name">Business Trip</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">business.trip</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                    Create your First Business Trip !
+                </p>
+            </field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="business_trip_menu" name="Business Trip" parent="hr_holidays.menu_hr_holidays_my_leaves"
+                  action="business_trip_action" sequence="4"/>
+
+        <record id="view_move_form_inherit" model="ir.ui.view">
+            <field name="name">account.move.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='journal_id']" position="after">
+                    <!-- Add your fields or attributes here -->
+                    <field name="trip_id" invisible="1"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

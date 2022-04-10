@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+handover_hr_access_hr_handover,handover.hr_access_hr_handover,model_hr_handover,,1,1,1,1
+handover_hr_access_hr_handover_approvals,handover.hr_access_hr_handover_approvals,model_hr_handover_approvals,,1,1,1,1

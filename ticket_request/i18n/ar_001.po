@@ -1,0 +1,389 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ticket_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210919\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-10 02:27+0000\n"
+"PO-Revision-Date: 2022-04-10 02:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Account Move"
+msgstr "حركة الحساب"
+
+#. module: ticket_request
+#: model:ir.model.fields.selection,name:ticket_request.selection__ticket_request__state__accounting
+msgid "Accounting"
+msgstr "الحسابات"
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Accounting Configurations"
+msgstr "الإعدادات الحسابية"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__city_from
+msgid "City From"
+msgstr "من مدينة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__city_to
+msgid "City To"
+msgstr "الي مدينة"
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Confirm"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields.selection,name:ticket_request.selection__ticket_request__state__confirmed
+msgid "Confirmed"
+msgstr "تأكيد"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__end_date
+msgid "Contract End Date"
+msgstr "تاريخ انتهاء العقد"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__start_date
+msgid "Contract Start Date"
+msgstr "تاريخ بداية العقد"
+
+#. module: ticket_request
+#: model_terms:ir.actions.act_window,help:ticket_request.id_ticket_receive_request_action
+msgid "Create Your First Ticket Request !"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Credit Account"
+msgstr "حساب الدائن"
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Debit Account"
+msgstr "حساب المدين"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__emp_price_ticket
+msgid "Emp. Ticket Price"
+msgstr "سعر التذكره للموظف"
+
+#. module: ticket_request
+#: model:ir.model.fields.selection,name:ticket_request.selection__ticket_request__state__employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__employee_family
+msgid "Employee family"
+msgstr "عائلة الموظف"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__employee_id
+msgid "Employee name"
+msgstr "اسم الموظف"
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__end_date
+msgid "End date of the contract (if it's a fixed-term contract)."
+msgstr ""
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Family Members"
+msgstr "افراد العائلة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__accounting_note
+msgid "Financial Note"
+msgstr "ملاحظات المالية"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields.selection,name:ticket_request.selection__ticket_request__state__hr_manager
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__hr_officer_note
+msgid "HR Note"
+msgstr "ملاحظات الموارد البشرية"
+
+#. module: ticket_request
+#: model:ir.model.fields.selection,name:ticket_request.selection__ticket_request__state__hr_officer
+msgid "HR Officer"
+msgstr "موظف الموارد البشرية"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__id
+msgid "ID"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__message_needaction
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__message_has_error
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Internal Notes"
+msgstr "ملاحظات داخلية"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Journal"
+msgstr "قيد اليومية"
+
+#. module: ticket_request
+#: model:ir.model,name:ticket_request.model_account_move
+msgid "Journal Entries"
+msgstr "القيود اليومية"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__link
+msgid "Link"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__nationality
+msgid "National"
+msgstr "الجنسية"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__hr_manager_note
+msgid "Purchase Note"
+msgstr "ملاظات المشتريات"
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Reject"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields.selection,name:ticket_request.selection__ticket_request__state__rejected
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__request_date
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__start_date
+msgid "Start date of the contract."
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_account_move__ticket_id
+msgid "Ticket"
+msgstr "التذكرة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__name
+msgid "Ticket ID"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.actions.act_window,name:ticket_request.id_ticket_receive_request_action
+#: model:ir.ui.menu,name:ticket_request.id_ticket_receive_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_tree
+msgid "Ticket Request"
+msgstr "طلب تذكرة"
+
+#. module: ticket_request
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Total Of price"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__total_price
+#: model_terms:ir.ui.view,arch_db:ticket_request.id_ticket_receive_request_form
+msgid "Total Price"
+msgstr "المجموع الكلي"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__total_price_account_move_id
+msgid "Total Price Account Move"
+msgstr "حركة مجموع التذكرة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__total_price_credit_account_id
+msgid "Total Price Credit Account"
+msgstr "حساب الدائن لمحموع التذكرة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__total_price_debit_account_id
+msgid "Total Price Debit Account"
+msgstr "حساب المدين لمحموع التذكرة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__total_price_journal_id
+msgid "Total Price Journal"
+msgstr "يوميه مجموع التذكرة"
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,field_description:ticket_request.field_ticket_request__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model.fields,help:ticket_request.field_ticket_request__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: ticket_request
+#: model:ir.model,name:ticket_request.model_ticket_request
+msgid "ticket.request"
+msgstr ""
+
+#. module: ticket_request
+#: code:addons/ticket_request/models/models.py:0
+#: code:addons/ticket_request/models/models.py:0
+#, python-format
+msgid "ليس لديك صلاحية الحذف من فضلك تواصل مع الادمن"
+msgstr ""

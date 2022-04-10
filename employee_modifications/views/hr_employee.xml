@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="hr_employee_inherit_form_view">
+            <field name="name">hr.employee.form.view</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <page name="hr_settings" position="after">
+                    <page name="family_info" string="Family Information">
+                        <group string="Family">
+                            <field name="fam_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="member_name"/>
+                                    <field name="relation"/>
+                                    <field name="member_contact"/>
+                                    <field name="member_age"/>
+                                    <field name="ticket_price" invisible="1"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </page>
+                </page>
+
+
+                <xpath expr="//field[@name='pin']" position="after">
+                    <!-- Add your fields or attributes here -->
+                    <field name="joining_date" required="1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

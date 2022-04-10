@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.sequence" id="seq_invoice_exchange">
+            <field name="name">Invoice Exchange Sequence</field>
+            <field name="code">invoice.exchange</field>
+            <field name="padding">5</field>
+            <field name="prefix">invoice/exchange/request/</field>
+        </record>
+    </data>
+</odoo>

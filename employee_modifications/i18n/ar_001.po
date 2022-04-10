@@ -1,0 +1,151 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* employee_modifications
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210919\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-10 02:20+0000\n"
+"PO-Revision-Date: 2022-04-10 02:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__member_age
+msgid "Age"
+msgstr "العمر"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__member_contact
+msgid "Contact No"
+msgstr "رقم الاتصال"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields.selection,name:employee_modifications.selection__hr_employee_family__relation__daughter
+msgid "Daughter"
+msgstr "بنت"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: employee_modifications
+#: model:ir.model,name:employee_modifications.model_hr_employee
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee__fam_ids
+#: model_terms:ir.ui.view,arch_db:employee_modifications.hr_employee_inherit_form_view
+msgid "Family"
+msgstr "العائلة"
+
+#. module: employee_modifications
+#: model:ir.model.fields,help:employee_modifications.field_hr_employee__fam_ids
+#: model_terms:ir.ui.view,arch_db:employee_modifications.hr_employee_inherit_form_view
+msgid "Family Information"
+msgstr "معلومات العائلة"
+
+#. module: employee_modifications
+#: model:ir.model.fields.selection,name:employee_modifications.selection__hr_employee_family__relation__father
+msgid "Father"
+msgstr "أب"
+
+#. module: employee_modifications
+#: model:ir.model,name:employee_modifications.model_hr_employee_family
+msgid "HR Employee Family"
+msgstr "عائلة موظف الموارد البشرية"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__id
+msgid "ID"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields,help:employee_modifications.field_hr_employee_family__employee_ref
+msgid ""
+"If family member currently is an employee of same company, then please tick "
+"this field"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__employee_ref
+msgid "Is Employee"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee__joining_date
+msgid "Joining Date"
+msgstr "تاريخ الانضمام"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields.selection,name:employee_modifications.selection__hr_employee_family__relation__mother
+msgid "Mother"
+msgstr "الام"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__member_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: employee_modifications
+#: model:ir.model.fields,help:employee_modifications.field_hr_employee_family__relation
+msgid "Relation with employee"
+msgstr "العلاقه مع الموظف"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__relation
+msgid "Relationship"
+msgstr "العلاقه"
+
+#. module: employee_modifications
+#: model:ir.model.fields,help:employee_modifications.field_hr_employee_family__employee_id
+msgid "Select corresponding Employee"
+msgstr ""
+
+#. module: employee_modifications
+#: model:ir.model.fields.selection,name:employee_modifications.selection__hr_employee_family__relation__son
+msgid "Son"
+msgstr "الابن"
+
+#. module: employee_modifications
+#: model:ir.model.fields,field_description:employee_modifications.field_hr_employee_family__ticket_price
+msgid "Ticket Price"
+msgstr "سعر التذكره"
+
+#. module: employee_modifications
+#: model:ir.model.fields.selection,name:employee_modifications.selection__hr_employee_family__relation__wife
+msgid "Wife"
+msgstr "الزوجه"

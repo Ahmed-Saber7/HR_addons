@@ -1,0 +1,490 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* termination_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210919\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-10 02:26+0000\n"
+"PO-Revision-Date: 2022-04-10 02:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__absence_days
+msgid "Absence Days"
+msgstr "أيام الغياب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__absence_days_credit_account_id
+msgid "Absence Days Credit Account"
+msgstr "حساب ائتمان أيام الغياب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__absence_days_debit_account_id
+msgid "Absence Days Debit Account"
+msgstr "حساب الخصم أيام الغياب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__absence_days_deduction
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Absence Days Deduction"
+msgstr "استقطاع أيام الغياب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__absence_days_journal_id
+msgid "Absence Days Journal"
+msgstr "مجلة أيام الغياب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__absence_days_move_id
+msgid "Absence Days Move"
+msgstr "حركة أيام الغياب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__account_move_id
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Account Move"
+msgstr "الحساب"
+
+#. module: termination_request
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Accounting Configurations"
+msgstr "تكوينات المحاسبة"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__state__accounting_manager
+msgid "Accounting Manager"
+msgstr "مدير الحسابات"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__accounting_manager_notes
+msgid "Accounting Manager Notes"
+msgstr "ملاجظات مدير الحسابات"
+
+#. module: termination_request
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Add a note"
+msgstr "أضف ملاحظة"
+
+#. module: termination_request
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Check Handover"
+msgstr "هل لديه اخلاء طرف ؟"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__employee_company_id
+msgid "Company"
+msgstr ""
+
+#. module: termination_request
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__state__confirm
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__credit_account_id
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Credit Account"
+msgstr "الحساب الدائن"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__contract_id
+msgid "Current Contract"
+msgstr "العقد الحالي"
+
+#. module: termination_request
+#: model:ir.model.fields,help:termination_request.field_hr_termination__contract_id
+msgid "Current contract of the employee"
+msgstr "العقد الحالي للموظف"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__d_manager_notes
+msgid "D Manager Notes"
+msgstr "ملاحظات المدير المباشر"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__debit_account_id
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Debit Account"
+msgstr "الحساب المدين"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__employee_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__deserved_salary
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Deserved Salary"
+msgstr "الراتب المستحق"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__deserved_salary_amount
+msgid "Deserved Salary Amount"
+msgstr "قيمة الراتب المستحق"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__deserved_salary_credit_account_id
+msgid "Deserved Salary Credit Account"
+msgstr "الراتب المستحق الحساب الدائن"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__deserved_salary_debit_account_id
+msgid "Deserved Salary Debit Account"
+msgstr "الراتب المستحق الحساب المدين"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__deserved_salary_journal_id
+msgid "Deserved Salary Journal"
+msgstr "الراتب المستحق اليومية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__deserved_salary_move_id
+msgid "Deserved Salary Move"
+msgstr "الراتب المستحق التحويل"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__state__d_manager
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__duration_days
+msgid "Duration/days"
+msgstr "المدة/يوم"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__duration_years
+msgid "Duration/years"
+msgstr "المده/السنين"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__handover_id
+msgid "Employee Handover"
+msgstr "اخلاء طرف الموظف"
+
+#. module: termination_request
+#: model:ir.actions.act_window,name:termination_request.act_hr_termination
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_tree_view
+msgid "Employees Termination"
+msgstr "انهاء خدمه الموظفين"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__termination_type__end_contract
+msgid "End Of Contract"
+msgstr "نهاية العقد"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__state__hr_manager
+msgid "HR Manager"
+msgstr "مدير الموارد البشريه"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__hr_manager_notes
+msgid "Hr Manager Notes"
+msgstr "ملاحظات مدير الموارد البشريه"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__id
+msgid "ID"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__if_handover
+msgid "If Handover"
+msgstr "هل اخلاء طرف الموظف"
+
+#. module: termination_request
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Internal Notes"
+msgstr "الملاحظات الداخلية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__joining_date
+msgid "Joining Date"
+msgstr "تاريخ الانضمام"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__journal_id
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Journal"
+msgstr "اليومية"
+
+#. module: termination_request
+#: model:ir.model,name:termination_request.model_account_move
+msgid "Journal Entries"
+msgstr "القيود اليومية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__last_working_day
+msgid "Last Working Day"
+msgstr "اخر يوم عمل"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__last_working_days
+msgid "Last Working Days"
+msgstr "اخر أيام عمل"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__left_vacations_days_amount
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Left Vacation Amount"
+msgstr "المبلغ للاجازات المتبقيه"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__left_vacation_amount_account_move_id
+msgid "Left Vacation Amount Account Move"
+msgstr "قيمة الاجازة المتبقية تحويل الحساب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__left_vacation_amount_credit_account_id
+msgid "Left Vacation Amount Credit Account"
+msgstr "قيمة الاجازة المتبقية الحساب الدائن"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__left_vacation_amount_debit_account_id
+msgid "Left Vacation Amount Debit Account"
+msgstr "قيمة الاجازة المتبقية الحساب المدين"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__left_vacation_amount_journal_id
+msgid "Left Vacation Amount Journal"
+msgstr "قيمة الاجازة المتبقية اليومية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__left_vacations_days
+msgid "Left Vacation Days"
+msgstr "ايام الاجازات المتبقية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__notes
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_allowances
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Other Allowances"
+msgstr "البدلات الاضافية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_allowances_credit_account_id
+msgid "Other Allowances Credit Account"
+msgstr "البدلات الاضافية الحساب الدائن"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_allowances_debit_account_id
+msgid "Other Allowances Debit Account"
+msgstr "البدلات الاضافية الحساب المدين"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_allowances_journal_id
+msgid "Other Allowances Journal"
+msgstr "البدلات الاضافية اليومية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_allowances_move_id
+msgid "Other Allowances Move"
+msgstr "البدلات الاضافية تحويل الحساب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_deductions
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Other Deductions"
+msgstr "الخصومات الاضافية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_deductions_credit_account_id
+msgid "Other Deductions Credit Account"
+msgstr "الخصومات الاضافية الحساب الدائن"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_deductions_debit_account_id
+msgid "Other Deductions Debit Account"
+msgstr "الخصومات الاضافية الحساب المدين"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_deductions_journal_id
+msgid "Other Deductions Journal"
+msgstr "الخصومات الاضافية اليومية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__other_deductions_move_id
+msgid "Other Deductions Move"
+msgstr "الخصومات الاضافية تحويل الحساب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__loans
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Outstanding Loans"
+msgstr "القروض المتبقية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__outstanding_loans_credit_account_id
+msgid "Outstanding Loans Credit Account"
+msgstr "القروض المتبقية الحساب الدائن"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__outstanding_loans_debit_account_id
+msgid "Outstanding Loans Debit Account"
+msgstr "القروض المتبقية الحساب المدين"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__outstanding_loans_journal_id
+msgid "Outstanding Loans Journal"
+msgstr "القروض المتبقية اليومية"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__outstanding_loans_move_id
+msgid "Outstanding Loans Move"
+msgstr "القروض المتبقية تحويل الحساب"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__state__purchase
+msgid "Purchase Manager"
+msgstr "مدير المشتريات"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__purchase_notes
+msgid "Purchase Notes"
+msgstr "ملاحظات مدير المشتريات"
+
+#. module: termination_request
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Reject"
+msgstr "رفض"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__state__rejected
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__termination_type__resignation
+msgid "Resignation"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__contract_joining_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: termination_request
+#: model:ir.model.fields,help:termination_request.field_hr_termination__contract_joining_date
+msgid "Start date of the contract."
+msgstr "تاريخ بدء العقد."
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: termination_request
+#: model:ir.model.fields.selection,name:termination_request.selection__hr_termination__termination_type__terminate
+msgid "Terminate"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_account_move__termination_id
+msgid "Termination"
+msgstr "انهاء خدمة"
+
+#. module: termination_request
+#: model:ir.ui.menu,name:termination_request.menu_hr_termination
+msgid "Termination Request"
+msgstr "طلب انهاء خدمة"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__today_date
+msgid "Today Date"
+msgstr "تاريخ اليوم"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__total_eos
+#: model_terms:ir.ui.view,arch_db:termination_request.hr_termination_form_view
+msgid "Total EOS"
+msgstr "المجموع الكلي"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__total_eos_with_all
+msgid "Total EOS With All"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__termination_type
+msgid "Type"
+msgstr ""
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__wage
+msgid "Wage"
+msgstr "المرتب"
+
+#. module: termination_request
+#: model:ir.model.fields,field_description:termination_request.field_hr_termination__wage_day_amount
+msgid "Wage Day Amount"
+msgstr "قيمة اليوم"
+
+#. module: termination_request
+#: code:addons/termination_request/models/models.py:0
+#, python-format
+msgid "Your Last Working Days Cant be more than 31."
+msgstr "اخر عدد ايام العمل لا يمكن ان يكون اكثر من 31."
+
+#. module: termination_request
+#: model:ir.model,name:termination_request.model_hr_termination
+msgid "hr.termination"
+msgstr ""

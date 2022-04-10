@@ -1,0 +1,413 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* handover
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210919\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-10 02:23+0000\n"
+"PO-Revision-Date: 2022-04-10 02:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.handover_template_id
+msgid "<strong>Department :</strong>"
+msgstr "القسم"
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.handover_template_id
+msgid "<strong>Employee Company :</strong>"
+msgstr "اسم الشركة"
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.handover_template_id
+msgid "<strong>Employee Name :</strong>"
+msgstr "اسم الموظف"
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.handover_template_id
+msgid "<strong>Joining Date :</strong>"
+msgstr "تاريخ التعيين"
+
+#. module: handover
+#: model:ir.model.fields.selection,name:handover.selection__hr_handover__state__accounting_manager
+msgid "Accounting Manager"
+msgstr "مدير الحسابات"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__accounting_manager_notes
+msgid "Accounting Manager Notes"
+msgstr "ملاحظات مدير الحسابات"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.hr_handover_form_view
+msgid "Add a note"
+msgstr "أضف ملاحظة"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__line_ids
+msgid "Approvals"
+msgstr "الموافقات"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: handover
+#: model:res.groups,name:handover.group_can_approve_to_handeover
+msgid "Can Approve to handeover "
+msgstr "يمكن الموافقة على التسليم"
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.hr_handover_form_view
+msgid "Confirm"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields.selection,name:handover.selection__hr_handover__state__confirm
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__create_uid
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__create_date
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__d_manager_notes
+msgid "D Manager Notes"
+msgstr "ملاجظات المدير المباشر"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__date_of_approval
+msgid "Date Of Approval"
+msgstr "تاريخ الموافقة"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__employee_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: handover
+#: model:ir.model.fields.selection,name:handover.selection__hr_handover__state__d_manager
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__display_name
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__employee_company_id
+msgid "Employee Company"
+msgstr "شركة الموظف"
+
+#. module: handover
+#: code:addons/handover/models/hr_handover.py:0
+#, python-format
+msgid "Employee must be unique"
+msgstr "الموظف يجب أن يكون فريدا"
+
+#. module: handover
+#: model:ir.actions.act_window,name:handover.act_hr_handover
+#: model_terms:ir.ui.view,arch_db:handover.hr_handover_form_view
+#: model_terms:ir.ui.view,arch_db:handover.hr_handover_tree_view
+msgid "Employees Handover"
+msgstr "اخلاء الموظفين"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields.selection,name:handover.selection__hr_handover__state__hr_manager
+msgid "HR Manager"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__handover_id
+#: model_terms:ir.ui.view,arch_db:handover.handover_template_id
+msgid "Handover"
+msgstr "اخلاء طرف"
+
+#. module: handover
+#: model:ir.ui.menu,name:handover.menu_hr_handover
+msgid "Handover Request"
+msgstr "طلب اخلاء طرف"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__hr_manager_notes
+msgid "Hr Manager Notes"
+msgstr "ملاحظات مدير الموارد"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__id
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__id
+msgid "ID"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__message_needaction
+#: model:ir.model.fields,help:handover.field_hr_handover__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__message_has_error
+#: model:ir.model.fields,help:handover.field_hr_handover__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.hr_handover_form_view
+msgid "Internal Notes"
+msgstr "ملاحظات داخلية"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__joining_date
+msgid "Joining Date"
+msgstr "تاريخ التعيين"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover____last_update
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__write_uid
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__write_date
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: handover
+#: model:ir.actions.report,name:handover.action_handover_report
+msgid "Print Report"
+msgstr "طباعة التقرير"
+
+#. module: handover
+#: model:ir.model.fields.selection,name:handover.selection__hr_handover__state__purchase
+msgid "Purchase Manager"
+msgstr "مدير المشتريات"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__purchase_notes
+msgid "Purchase Notes"
+msgstr "ملاحظات مدير المشتريات"
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.hr_handover_form_view
+msgid "Reject"
+msgstr "رفض"
+
+#. module: handover
+#: model:ir.model.fields.selection,name:handover.selection__hr_handover__state__rejected
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__sales_person
+msgid "Sales Person"
+msgstr "البائع"
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover_approvals__user_id
+msgid "User"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,field_description:handover.field_hr_handover__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: handover
+#: model:ir.model.fields,help:handover.field_hr_handover__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: handover
+#: model:ir.model,name:handover.model_hr_handover
+msgid "hr.handover"
+msgstr ""
+
+#. module: handover
+#: model:ir.model,name:handover.model_hr_handover_approvals
+msgid "hr.handover.approvals"
+msgstr ""
+
+#. module: handover
+#: model_terms:ir.ui.view,arch_db:handover.handover_template_id
+msgid "اخلاء طرف"
+msgstr ""

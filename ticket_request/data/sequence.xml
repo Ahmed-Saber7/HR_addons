@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<odoo>-->
+<!--    <data>-->
+<!--        <record id="id_seq" model="ir.sequence">-->
+<!--            <field name="name">Ticket Request Sequence</field>-->
+<!--            <field name="code">ticket.request</field>-->
+<!--            <field name="padding">5</field>/>-->
+<!--            <field name="prefix">Ticket/Request/</field>-->
+<!--        </record>-->
+<!--    </data>-->
+<!--</odoo>-->
+

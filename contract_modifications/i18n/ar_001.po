@@ -1,0 +1,191 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* contract_modifications
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210919\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-10 02:19+0000\n"
+"PO-Revision-Date: 2022-04-10 02:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__absence_discount_without_credit_deductions
+msgid "Absence Discount Without Credit Deductions"
+msgstr "خصم الغياب بدون استقطاعات ائتمانية"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__absence_without_permission_deductions
+msgid "Absence Without Permission Deductions"
+msgstr "الغياب بدون إذن الاستقطاعات"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__administrative_deductions
+msgid "Administrative Deductions"
+msgstr "الاستقطاعات الإدارية"
+
+#. module: contract_modifications
+#: model_terms:ir.ui.view,arch_db:contract_modifications.hr_contract_view_form+inherit
+msgid "Allowances"
+msgstr ""
+
+#. module: contract_modifications
+#: model_terms:ir.ui.view,arch_db:contract_modifications.hr_contract_view_form+inherit
+msgid "Allowances and Deductions"
+msgstr ""
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__analytic_account_id
+msgid "Analytic Account"
+msgstr "حساب تحليلي"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__company_amount
+msgid "Company Amount"
+msgstr "مبلغ الشركة"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__company_gosi
+msgid "Company Gosi"
+msgstr "شركة التأمينات"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__company_percentage
+msgid "Company Percentage"
+msgstr "نسبة الشركة"
+
+#. module: contract_modifications
+#: model_terms:ir.ui.view,arch_db:contract_modifications.hr_contract_view_form+inherit
+msgid "Deductions"
+msgstr ""
+
+#. module: contract_modifications
+#: model:ir.model.fields.selection,name:contract_modifications.selection__hr_contract__type_of_company_offices__egyptian_office
+msgid "Egyptian office"
+msgstr "المكتب المصرى"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__employee_amount
+msgid "Employee Amount"
+msgstr "مبلغ الموظف"
+
+#. module: contract_modifications
+#: model:ir.model,name:contract_modifications.model_hr_contract
+msgid "Employee Contract"
+msgstr ""
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__employee_gosi
+msgid "Employee Gosi"
+msgstr "تأمينات الموظف"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__employee_percentage
+msgid "Employee Percentage"
+msgstr "نسبة الموظف"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__fingerprint_deductions
+msgid "Fingerprint Deductions"
+msgstr "استقطاعات بصمات الأصابع"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__general_deductions
+msgid "General Deductions"
+msgstr "استقطاعات عامة"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__house_allowances
+msgid "House Allowances"
+msgstr "بدلات المنزل"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__Incentive_bonus
+msgid "Incentive Bonus"
+msgstr "علاوة تشجيعية"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__insurance_date
+msgid "Insurance Date"
+msgstr "تاريخ التأمين"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__insurance_salary
+msgid "Insurance Salary"
+msgstr "راتب التأمين"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__living_allowances
+msgid "Living Allowances"
+msgstr "بدلات المعيشة"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__medical_insurance_deductions
+msgid "Medical Insurance Deductions"
+msgstr "استقطاعات التأمين الطبي"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__motivation
+msgid "Motivation"
+msgstr "تحفيز"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__nature_of_work_allowances
+msgid "Nature Of Work Allowances"
+msgstr "بدلات طبيعة العمل"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__overtime_allowance
+msgid "Overtime Allowance"
+msgstr "بدل العمل الإضافي"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__profit_account
+msgid "Profit Account"
+msgstr "حساب الربح"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__Regular_bonus_for_managers
+msgid "Regular Bonus For Managers"
+msgstr "المكافأة العادية للمديرين"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__Regular_regularity_equivalent
+msgid "Regular Regularity Equivalent"
+msgstr "مكافئ الانتظام المنتظم"
+
+#. module: contract_modifications
+#: model:ir.model.fields.selection,name:contract_modifications.selection__hr_contract__type_of_company_offices__saudi_office
+msgid "Saudi office"
+msgstr "المكتب السعودي"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__social_insurance_deductions
+msgid "Social Insurance Deductions"
+msgstr "استقطاعات التأمينات الاجتماعية"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__telephone_allowance
+msgid "Telephone Allowance"
+msgstr "بدل الهاتف"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__transport_allowances
+msgid "Transport Allowances"
+msgstr "بدلات النقل"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__treatment_allowance
+msgid "Treatment Allowance"
+msgstr "بدل العلاج"
+
+#. module: contract_modifications
+#: model:ir.model.fields,field_description:contract_modifications.field_hr_contract__type_of_company_offices
+msgid "Types of company offices"
+msgstr "أنواع مكاتب الشركة"

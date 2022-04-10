@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record id="id_ticket_receive_request_form" model="ir.ui.view">
+            <field name="name">ticket.request.form</field>
+            <field name="model">ticket.request</field>
+            <field name="arch" type="xml">
+                <form string="Ticket Request">
+                    <header>
+                        <button name="employee_confirm" type="object" string="Confirm" states="employee"/>
+                        <button name="hr_officer_confirm" string="Confirm" groups="hr.group_hr_user" class="oe_highlight" states="hr_officer" type="object"/>
+                        <button name="hr_manager_confirm" string="Confirm" groups="hr.group_hr_manager" class="oe_highlight" states="hr_manager" type="object"/>
+                        <button name="accounting_confirm" string="Confirm" groups="account.group_account_manager" class="oe_highlight" states="accounting" type="object"/>
+                        <button name="reject" type="object" string="Reject" attrs="{'invisible': [('state', 'in', ['employee','confirmed','rejected'])]}" class="oe_highlight"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="employee_id"/>
+                                <field name="nationality"/>
+                                <field name="department_id"/>
+                                <field name="city_from" attrs="{'readonly': [('state', '!=', ('employee'))]}"/>
+                                <field name="city_to" attrs="{'readonly': [('state', '!=', ('employee'))]}"/>
+                                <field name="emp_price_ticket"/>
+                            </group>
+                            <group>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                                <field name="request_date"/>
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                                <field name="total_price"/>
+                                <field name="name" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Family Members">
+                                <field name="employee_family" options="{'no_create': True}"
+                                       attrs="{'readonly': [('state', 'in', ['confirmed','rejected'])]}">
+                                    <tree editable="bottom">
+                                        <field name="member_name"/>
+                                        <field name="relation"/>
+                                        <field name="member_contact"/>
+                                        <field name="member_age"/>
+                                        <field name="ticket_price" sum="Total Of price"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Accounting Configurations" groups="hr.group_hr_user">
+
+                                <group string="Total Price">
+                                    <field name="total_price" readonly="1"/>
+                                    <field name="total_price_journal_id" string="Journal" />
+                                    <field name="total_price_debit_account_id" string="Debit Account"/>
+                                    <field name="total_price_credit_account_id" string="Credit Account"/>
+                                    <field name="total_price_account_move_id" string="Account Move"/>
+                                </group>
+
+                            </page>
+                            <page string="Internal Notes" name="internal_notes">
+                                <group>
+                                    <field name="hr_officer_note" attrs="{'readonly': [('state', '!=', ('hr_officer'))]}"/>
+                                </group>
+                                <group>
+                                    <field name="hr_manager_note" attrs="{'readonly': [('state', '!=', ('hr_manager'))]}"/>
+                                </group>
+                                <group>
+                                    <field name="accounting_note" attrs="{'readonly': [('state', '!=', ('accounting'))]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record id="id_ticket_receive_request_tree" model="ir.ui.view">
+            <field name="name">ticket.request.tree</field>
+            <field name="model">ticket.request</field>
+            <field name="arch" type="xml">
+                <tree string="Ticket Request" decoration-danger="state == 'rejected'"
+                      decoration-success="state == 'draft'"
+                      decoration-info="state == ' employee'">
+                    <field name="employee_id"/>
+                    <field name="employee_family" widget="many2many_tags"/>
+                    <field name="request_date"/>
+                    <field name="city_from"/>
+                    <field name="city_to"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="id_ticket_receive_request_action" model="ir.actions.act_window">
+            <field name="name">Ticket Request</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ticket.request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    <!-- Add Text Here -->
+                    Create Your First Ticket Request !
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="id_ticket_receive_request" name="Ticket Request" parent="hr.menu_hr_employee_payroll"
+                  action="id_ticket_receive_request_action" sequence="10"/>
+        <record id="view_move_form_inherit" model="ir.ui.view">
+            <field name="name">account.move.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='journal_id']" position="after">
+                    <!-- Add your fields or attributes here -->
+                    <field name="ticket_id" invisible="1"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

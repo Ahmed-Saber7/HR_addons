@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <template id="emp_att_repo_temp">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <t t-if="report_language == 'en'">
+                        <h3 style="text-align: center;font-family:serif;fontsize:16px;">
+                            Employees Attendance Report
+                        </h3>
+                        <br/>
+                        <br/>
+                        <table class="table table-bordered table-striped" name="crossovered_budget_line_table"
+                               style="width:100%;direction:ltr;">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" style="width:4%">#</th>
+                                    <th class="text-center" scope="col">Employee Name</th>
+                                    <th class="text-center" scope="col">Days</th>
+                                    <th class="text-center" scope="col">Planned Worked Hours</th>
+                                    <th class="text-center" scope="col">Actual Worked Hours</th>
+                                    <th class="text-center" scope="col">Late Hours</th>
+                                </tr>
+                            </thead>
+                            <t t-set="i" t-value="1"/>
+                            <t t-set="const" t-value="0"/>
+                            <tbody>
+                                <t t-foreach="attendances" t-as="att">
+                                    <tr>
+                                        <td class="text-center">
+                                            <span t-esc="i"/>
+                                            <t t-set="i" t-value="i+1"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="att['employee_name']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="att['days']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="round(att['all_planned_working_hours'], 2)"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="round(att['all_actual_working_hours'], 2)"/>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <span t-esc="round(att['lateness_hours'], 2)"/>
+                                        </td>
+
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+
+                    </t>
+                    <t t-if="report_language == 'ar'">
+                        <h3 style="text-align: center;fontsize:16px;">
+                            تقرير الحضور للموظفين
+                        </h3>
+                        <br/>
+                        <br/>
+                        <table class="table table-bordered table-striped" name="crossovered_budget_line_table"
+                               style="width:100%;direction:rtl;">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" style="width:4%">#</th>
+                                    <th class="text-center" scope="col">اسم الموظف</th>
+                                    <th class="text-center" scope="col">ايام الحضور</th>
+                                    <th class="text-center" scope="col">عدد ساعات العمل</th>
+                                    <th class="text-center" scope="col">عدد ساعات الحضور</th>
+                                    <th class="text-center" scope="col">عدد ساعات التأخير</th>
+                                </tr>
+                            </thead>
+                            <t t-set="i" t-value="1"/>
+                            <t t-set="const" t-value="0"/>
+                            <tbody>
+                                <t t-foreach="attendances" t-as="att">
+                                    <tr>
+                                        <td class="text-center">
+                                            <span t-esc="i"/>
+                                            <t t-set="i" t-value="i+1"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="att['employee_name']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="att['days']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="round(att['all_planned_working_hours'], 2)"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="round(att['all_actual_working_hours'], 2)"/>
+                                        </td>
+
+                                        <td class="text-center">
+                                            <span t-esc="round(att['lateness_hours'], 2)"/>
+                                        </td>
+
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

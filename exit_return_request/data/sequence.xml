@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.sequence" id="seq_exit_return">
+            <field name="name">Exit Return Sequence</field>
+            <field name="code">exit.return</field>
+            <field name="padding">5</field>
+            <field name="prefix">exit/return/request/</field>
+        </record>
+    </data>
+</odoo>

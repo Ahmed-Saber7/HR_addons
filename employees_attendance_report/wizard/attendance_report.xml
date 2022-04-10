@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="employees_attendance_report_view" model="ir.ui.view">
+        <field name="name">Employees Attendance Report</field>
+        <field name="model">employees.attendance.report</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                    </group>
+                    <group>
+                        <field name="date_to"/>
+                        <field name="report_language"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="employees_attendance_report_view_action" model="ir.actions.act_window">
+        <field name="name">Employees Attendance Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">employees.attendance.report</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="employees_attendance_report_view"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- This Menu Item Must have a parent -->
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="employees_attendance_report_view_action_report_menu" name="Employees Attendance Report"
+              parent="attendance_report.attendance_report_view_action_menu"
+              action="employees_attendance_report_view_action" sequence="2"/>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report id="action_employees_attendance_report_pdf"
+                model="hr.attendance"
+                string="Employees Attendance Report"
+                name="employees_attendance_report.emp_att_repo_temp"
+                file="employees_attendance_report.emp_att_repo_temp"
+                report_type="qweb-pdf"
+        />
+    </data>
+</odoo>

@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="hr_contract_view_form+inherit" model="ir.ui.view">
+            <field name="name">contract_wage_fields.contract.changes</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//group[@name='salary_and_advantages']" position="inside">
+                    <!-- Add your fields or attributes here -->
+                    <field name="insurance_date"/>
+                    <field name="insurance_salary"/>
+                    <field name="employee_percentage"/>
+                    <field name="company_percentage"/>
+                    <field name="employee_amount"/>
+                    <field name="company_amount"/>
+                    <field name="employee_gosi"/>
+                    <field name="company_gosi"/>
+                </xpath>
+
+                <xpath expr="//notebook/page[2]" position="after">
+                    <page name="allowances_and_deductions" string="Allowances and Deductions">
+                        <group string="Allowances" name="allowances">
+                            <group>
+                                <field name="house_allowances"/>
+                                <field name="overtime_allowance"/>
+                                <field name="treatment_allowance"/>
+                                <field name="transport_allowances"/>
+                            </group>
+                            <group>
+                                <field name="living_allowances"/>
+                                <field name="telephone_allowance"/>
+                                <field name="motivation"/>
+                            </group>
+                        </group>
+                        <group string="Deductions" name="deductions">
+                            <group>
+                                <field name="general_deductions"/>
+                                <field name="social_insurance_deductions"/>
+                                <field name="medical_insurance_deductions"/>
+                                <field name="fingerprint_deductions"/>
+                            </group>
+                            <group>
+                                <field name="administrative_deductions"/>
+                                <field name="absence_without_permission_deductions"/>
+                                <field name="absence_discount_without_credit_deductions"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+
+                <xpath expr="//field[@name='job_id']" position="after">
+                    <field name="type_of_company_offices" required="1"/>
+                    <field name="analytic_account_id" required="0"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>
+

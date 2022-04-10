@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report id="action_attendance_report_pdf"
+                model="hr.attendance"
+                string="Attendance Report"
+                name="attendance_report.attendance_report_template"
+                file="attendance_report.attendance_report_template"
+                report_type="qweb-pdf"
+        />
+    </data>
+</odoo>

@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+
+        <record id="view_hr_payslip_form_inherit" model="ir.ui.view">
+            <field name="name">hr.payslip</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='refund_sheet']" position="after">
+                    <button name="send_payslip" string="Send Payslip" type="object"
+                            class="oe_highlight" states="done"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

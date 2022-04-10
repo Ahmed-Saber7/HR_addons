@@ -1,0 +1,177 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* attendance_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210919\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-10 02:17+0000\n"
+"PO-Revision-Date: 2022-04-10 02:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "/ ساعات"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "/Hrs"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model.fields.selection,name:attendance_report.selection__attendance_report__report_language__ar
+msgid "Arabic"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.actions.report,name:attendance_report.action_attendance_report_pdf
+#: model:ir.ui.menu,name:attendance_report.attendance_report_view_action_menu
+#: model:ir.ui.menu,name:attendance_report.attendance_report_view_action_report_menu
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "Attendance Report"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model,name:attendance_report.model_attendance_report
+msgid "Attendance Report wizard"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_view
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "Check In"
+msgstr "الدخول"
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "Check Out"
+msgstr "الخروج"
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__date_from
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__date_to
+msgid "Date To"
+msgstr "الي تاريخ"
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_hr_employee__determination_people
+msgid "Determination People"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__display_name
+#: model:ir.model.fields,field_description:attendance_report.field_report_attendance_report_attendance_report_template__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model,name:attendance_report.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: attendance_report
+#: model:ir.model.fields.selection,name:attendance_report.selection__attendance_report__report_language__en
+msgid "English"
+msgstr "انجليزي"
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__id
+#: model:ir.model.fields,field_description:attendance_report.field_report_attendance_report_attendance_report_template__id
+msgid "ID"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__report_language
+msgid "Language"
+msgstr "اللغه"
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report____last_update
+#: model:ir.model.fields,field_description:attendance_report.field_report_attendance_report_attendance_report_template____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: attendance_report
+#: model:ir.model.fields,field_description:attendance_report.field_attendance_report__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_view
+msgid "Print"
+msgstr "طباعه"
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "Worked Hours"
+msgstr "ساعات العمل"
+
+#. module: attendance_report
+#: model:ir.actions.act_window,name:attendance_report.attendance_report_view_action
+msgid "attendance Report"
+msgstr "تقرير الحضور"
+
+#. module: attendance_report
+#: model:ir.model,name:attendance_report.model_report_attendance_report_attendance_report_template
+msgid "report.attendance_report.attendance_report_template"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "اسم الموظف"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "تاريخ الانصراف"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "تاريخ الحضور"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "تقرير الحضور"
+msgstr ""
+
+#. module: attendance_report
+#: model_terms:ir.ui.view,arch_db:attendance_report.attendance_report_template
+msgid "ساعات الحضور"
+msgstr ""

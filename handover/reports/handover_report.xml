@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report id="action_handover_report"
+            model="hr.handover"
+            report_type="qweb-pdf"
+            string="Print Report"
+            name="handover.handover_template_id"
+            file="handover.handover_template_id"/>
+
+    <data>
+        <template id="handover_template_id">
+            <t t-call="web.html_container">
+                <t t-if="docs">
+                    <t t-foreach="docs" t-as="o">
+                        <t t-call="web.external_layout">
+                            <t t-if="o.sales_person.lang =='en_US'">
+                                <div class="page" dir="ltr">
+                                    <h1 class="text-center">Handover</h1>
+                                    <br></br>
+                                    <table class="table table-bordered table-striped text-left"
+                                           name="crossovered_budget_line_table"
+                                           style="width:100%;direction:ltr;">
+                                        <tbody>
+                                            <t t-foreach="docs" t-as="l">
+                                                <tr>
+                                                    <td style="width:50%;">
+                                                        <strong>Employee Name :</strong>
+                                                        <span t-field="l.employee_id.name"/>
+                                                    </td>
+                                                    <td style="width:50%;">
+                                                        <strong>Employee Company :</strong>
+                                                        <span t-field="l.employee_company_id"/>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered table-striped text-left"
+                                           name="crossovered_budget_line_table"
+                                           style="width:100%;direction:ltr;">
+                                        <tbody>
+                                            <t t-foreach="docs" t-as="l">
+                                                <tr>
+                                                    <td style="width:50%;">
+                                                        <strong>Department :</strong>
+                                                        <span t-field="l.employee_department_id.name"/>
+                                                    </td>
+                                                    <td style="width:50%;">
+                                                        <strong>Joining Date :</strong>
+                                                        <span t-field="l.joining_date"/>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </t>
+                            <t t-if="o.sales_person.lang !='en_US'">
+                                <div class="page" dir="rtl">
+                                    <h1 class="text-center">اخلاء طرف</h1>
+                                    <br></br>
+                                    <table class="table table-bordered table-striped text-left"
+                                           name="crossovered_budget_line_table"
+                                           style="width:100%;direction:ltr;">
+                                        <tbody>
+                                            <t t-foreach="docs" t-as="l">
+                                                <tr>
+                                                    <td style="width:50%;">
+                                                        <strong>Employee Name :</strong>
+                                                        <span t-field="l.employee_id.name"/>
+                                                    </td>
+                                                    <td style="width:50%;">
+                                                        <strong>Employee Company :</strong>
+                                                        <span t-field="l.employee_company_id"/>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered table-striped text-left"
+                                           name="crossovered_budget_line_table"
+                                           style="width:100%;direction:ltr;">
+                                        <tbody>
+                                            <t t-foreach="docs" t-as="l">
+                                                <tr>
+                                                    <td style="width:50%;">
+                                                        <strong>Department :</strong>
+                                                        <span t-field="l.employee_department_id.name"/>
+                                                    </td>
+                                                    <td style="width:50%;">
+                                                        <strong>Joining Date :</strong>
+                                                        <span t-field="l.joining_date"/>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </t>
+                        </t>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
