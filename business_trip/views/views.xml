@@ -190,8 +190,8 @@
         </record>
 
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="business_trip_menu" name="Business Trip" parent="hr_holidays.menu_hr_holidays_my_leaves"
-                  action="business_trip_action" sequence="4"/>
+        <menuitem id="business_trip_menu" name="طلب اجازه" parent="hr.menu_hr_employee_payroll"
+                  action="business_trip_action" sequence="13"/>
 
         <record id="view_move_form_inherit" model="ir.ui.view">
             <field name="name">account.move.form.inherit</field>
